@@ -2,7 +2,7 @@ import streamlit as st
 from groq import Groq
 
 def generate_insights(df):
-    client = Groq(api_key=st.secrets["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"])
+    client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
     prompt = f"""
     Analyze the following expense data:
